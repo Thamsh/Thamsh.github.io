@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mohiddeen Thamsheer</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=El+Messiri&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'El Messiri', serif;
+      background-color: #f5f4ef;
+      color: #222;
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(to right, #d8cfc4, #e6dfd6);
+      padding: 60px 20px;
+      text-align: center;
+      border-bottom: 2px solid #ccc;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      color: #2c2a27;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #555;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #eae7df;
+      padding: 10px 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #444;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #006666;
+    }
+
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #333;
+      border-bottom: 2px solid #ddd;
+      display: inline-block;
+    }
+
+    .works ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .works li {
+      background: #fdfdfc;
+      margin-bottom: 10px;
+      padding: 12px 16px;
+      border-left: 5px solid #6b5b4e;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    footer {
+      background-color: #e8e2d8;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.9em;
+      color: #444;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1.2s forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 class="fade-in">Mohiddeen Thamsheer</h1>
+    <p class="fade-in">Writer • Translator • Islamic Scholar</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#works">Works</a>
+    <a href="#current">Current Role</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="fade-in">
+    <h2>About</h2>
+    <p>
+      Mohiddeen Thamsheer is a distinguished writer, translator, and Islamic scholar from India. With profound knowledge in theology, jurisprudence, and literature, he has dedicated his life to bridging cultures through language and faith. His writings reflect a poetic depth and philosophical clarity, rooted in both classical and contemporary thought.
+    </p>
+  </section>
+
+  <section id="works" class="works fade-in">
+    <h2>Selected Works</h2>
+    <ul>
+      <li><strong>Kayalpattinam</strong> – A literary reflection on history and culture.</li>
+      <li><strong>What is University?</strong> – A thought-provoking essay on education and purpose.</li>
+      <li><strong>Translations</strong> – Classical Islamic texts and modern essays into Malayalam.</li>
+      <li>More essays and translations published in various Islamic and academic platforms.</li>
+    </ul>
+  </section>
+
+  <section id="current" class="fade-in">
+    <h2>Current Role</h2>
+    <p>
+      Thamsheer currently serves as a translator at <strong>Thijori Web Magazine</strong>, where he works on intellectually rich and culturally nuanced content. His role involves making academic and spiritual texts accessible to wider audiences in the Malayalam language.
+    </p>
+  </section>
+
+  <section id="contact" class="fade-in">
+    <h2>Contact</h2>
+    <p>
+      📧 Email: mohiddeen.thamsheer@email.com<br/>
+      📍 Location: Ullal, India<br/>
+      🖋 Follow his works on: <em>Thijori Web Magazine</em>
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mohiddeen Thamsheer. Designed in the Ainjmal style — minimal, meaningful, mystical.</p>
+  </footer>
+
+  <script>
+    // Simple scroll fade-in effect
+    const faders = document.querySelectorAll('.fade-in');
+
+    const appearOptions = {
+      threshold: 0.2,
+      rootMargin: "0px 0px -50px 0px"
+    };
+
+    const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('appear');
+        appearOnScroll.unobserve(entry.target);
+      });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+      appearOnScroll.observe(fader);
+    });
+  </script>
+
+</body>
+</html>
