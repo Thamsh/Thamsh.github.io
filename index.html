@@ -5,534 +5,145 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mohiddeen Thamsheer</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=El+Messiri&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&display=swap');
 
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      scroll-behavior: smooth;
     }
 
     body {
-      font-family: 'El Messiri', serif;
-      background-color: #f5f4ef;
+      font-family: 'Crimson Pro', serif;
+      background-color: #f9f9f4;
       color: #222;
       line-height: 1.7;
+      padding: 2rem;
     }
 
     header {
-      background: linear-gradient(to right, #d8cfc4, #e6dfd6);
-      padding: 60px 20px;
       text-align: center;
-      border-bottom: 2px solid #ccc;
+      margin-bottom: 3rem;
     }
 
     header h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
-      color: #2c2a27;
+      font-size: 2.8rem;
+      font-weight: 700;
+      color: #2e2e2e;
     }
 
     header p {
-      font-size: 1.2em;
-      color: #555;
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      background-color: #eae7df;
-      padding: 10px 0;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    }
-
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #444;
-      font-weight: 500;
-    }
-
-    nav a:hover {
-      color: #006666;
+      font-size: 1.2rem;
+      color: #666;
+      margin-top: 0.5rem;
     }
 
     section {
-      max-width: 900px;
-      margin: auto;
-      padding: 60px 20px;
+      max-width: 850px;
+      margin: 0 auto 3rem;
+      padding: 1.5rem;
+      background-color: #fff;
+      border-radius: 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
     }
 
-    h2 {
-      font-size: 2em;
-      margin-bottom: 20px;
-      color: #333;
-      border-bottom: 2px solid #ddd;
-      display: inline-block;
+    section h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #444;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 0.4rem;
     }
 
-    .works ul {
-      list-style: none;
-      padding-left: 0;
+    ul {
+      list-style: square;
+      margin-left: 1.2rem;
     }
 
-    .works li {
-      background: #fdfdfc;
-      margin-bottom: 10px;
-      padding: 12px 16px;
-      border-left: 5px solid #6b5b4e;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    a {
+      color: #006766;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
 
     footer {
-      background-color: #e8e2d8;
       text-align: center;
-      padding: 40px 20px;
-      font-size: 0.9em;
-      color: #444;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #aaa;
     }
 
-    .fade-in {
+    .highlight {
+      color: #005f5f;
+      font-weight: 600;
+    }
+
+    .fadeIn {
       opacity: 0;
       transform: translateY(20px);
-      animation: fadeIn 1.2s forwards;
+      transition: all 0.6s ease-in-out;
     }
 
-    @keyframes fadeIn {
-      to {
-        opacity: 1;
-        transform: none;
-      }
+    .fadeIn.visible {
+      opacity: 1;
+      transform: translateY(0);
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1 class="fade-in">Mohiddeen Thamsheer</h1>
-    <p class="fade-in">Writer • Translator • Islamic Scholar</p>
+    <h1>Mohiddeen Thamsheer</h1>
+    <p>Writer · Translator · Islamic Scholar · Researcher</p>
   </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#works">Works</a>
-    <a href="#current">Current Role</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section id="about" class="fade-in">
+  <section class="fadeIn">
     <h2>About</h2>
-    <p>
-      Mohiddeen Thamsheer is a distinguished writer, translator, and Islamic scholar from India. With profound knowledge in theology, jurisprudence, and literature, he has dedicated his life to bridging cultures through language and faith. His writings reflect a poetic depth and philosophical clarity, rooted in both classical and contemporary thought.
-    </p>
+    <p>Mohiddeen Thamsheer is a passionate <span class="highlight">writer, translator</span>, and a dedicated <span class="highlight">Islamic scholar</span>. His works reflect a deep engagement with contemporary Islamic thought and cultural memory. He is currently pursuing his Master's in Islamic Sciences at <strong>Madin Kulliya of Islamic Science College</strong>.</p>
   </section>
 
-  <section id="works" class="works fade-in">
+  <section class="fadeIn">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>Graduation:</strong> History, Economics, Political Science – Mangalore University</li>
+      <li><strong>Islamic Graduation:</strong> Theology & Jurisprudence – KGN Islamic Science Dawa College, Mithur</li>
+      <li><strong>Postgraduate:</strong> Master's in Islamic Science – Madin Kulliya of Islamic Science College (Ongoing)</li>
+    </ul>
+  </section>
+
+  <section class="fadeIn">
     <h2>Selected Works</h2>
     <ul>
-      <li><strong>Kayalpattinam</strong> – A literary reflection on history and culture.</li>
-      <li><strong>What is University?</strong> – A thought-provoking essay on education and purpose.</li>
-      <li><strong>Translations</strong> – Classical Islamic texts and modern essays into Malayalam.</li>
-      <li>More essays and translations published in various Islamic and academic platforms.</li>
+      <li><a href="https://thijori.in/what-is-islamic-university-part-1/" target="_blank">What is Islamic University (Part 1)</a></li>
+      <li><a href="https://thijori.in/turbon-a-religious-symbol/" target="_blank">Turban: A Religious Symbol</a></li>
+      <li><a href="https://thijori.in/lively-hisotry-ofkalpattanam/" target="_blank">Lively History of Kayalpattinam</a></li>
+      <li>... and several more contributions on <a href="https://thijori.in" target="_blank">Thijori Web Magazine</a></li>
     </ul>
   </section>
 
-  <section id="current" class="fade-in">
-    <h2>Current Role</h2>
-    <p>
-      Thamsheer currently serves as a translator at <strong>Thijori Web Magazine</strong>, where he works on intellectually rich and culturally nuanced content. His role involves making academic and spiritual texts accessible to wider audiences in the Malayalam language.
-    </p>
-  </section>
-
-  <section id="contact" class="fade-in">
-    <h2>Contact</h2>
-    <p>
-      📧 Email: mohiddeen.thamsheer@email.com<br/>
-      📍 Location: Ullal, India<br/>
-      🖋 Follow his works on: <em>Thijori Web Magazine</em>
-    </p>
+  <section class="fadeIn">
+    <h2>Research & Interests</h2>
+    <p>Thamsheer’s research explores intersections of Islamic tradition with modern knowledge, education reform, spiritual practices, and Sufi heritage in South India. He seeks to build bridges between academic scholarship and community awareness through thoughtful writing and translation.</p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Mohiddeen Thamsheer. Designed in the Ainjmal style — minimal, meaningful, mystical.</p>
+    &copy; 2025 Mohiddeen Thamsheer · Crafted in Ainjmal Style
   </footer>
 
   <script>
-    // Simple scroll fade-in effect
-    const faders = document.querySelectorAll('.fade-in');
-
-    const appearOptions = {
-      threshold: 0.2,
-      rootMargin: "0px 0px -50px 0px"
-    };
-
-    const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+    const fadeIns = document.querySelectorAll('.fadeIn');
+    const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add('appear');
-        appearOnScroll.unobserve(entry.target);
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
       });
-    }, appearOptions);
+    }, { threshold: 0.2 });
 
-    faders.forEach(fader => {
-      appearOnScroll.observe(fader);
-    });
-  </script>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mohiddeen Thamsheer | Personal Website</title>
-  <style>
-    :root {
-      --main-bg: #fdfaf6;
-      --accent: #4c4b63;
-      --highlight: #937b63;
-      --text-color: #1f1f1f;
-      --light-gray: #888;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: 'Georgia', serif;
-      background-color: var(--main-bg);
-      color: var(--text-color);
-      line-height: 1.8;
-      padding: 20px;
-    }
-
-    header {
-      text-align: center;
-      padding: 40px 20px;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      color: var(--accent);
-      font-family: 'Cambria', serif;
-      letter-spacing: 1px;
-    }
-
-    header p {
-      font-style: italic;
-      color: var(--highlight);
-      margin-top: 10px;
-    }
-
-    nav {
-      margin-top: 30px;
-      text-align: center;
-    }
-
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: var(--accent);
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: var(--highlight);
-    }
-
-    section {
-      max-width: 800px;
-      margin: 50px auto;
-      padding: 0 20px;
-    }
-
-    h2 {
-      color: var(--accent);
-      border-left: 5px solid var(--highlight);
-      padding-left: 10px;
-      margin-bottom: 20px;
-    }
-
-    .bio p, .education p {
-      margin-bottom: 15px;
-      font-size: 1.05rem;
-    }
-
-    ul.works {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    ul.works li {
-      margin-bottom: 10px;
-    }
-
-    ul.works a {
-      color: var(--highlight);
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    ul.works a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px 10px;
-      color: var(--light-gray);
-      font-size: 0.9rem;
-      border-top: 1px solid #ddd;
-    }
-
-    .arabic {
-      font-family: 'Scheherazade', serif;
-      font-size: 1.2rem;
-      color: var(--highlight);
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1>Mohiddeen Thamsheer</h1>
-    <p>Writer • Translator • Islamic Scholar</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#education">Education</a>
-      <a href="#works">Works</a>
-    </nav>
-  </header>
-
-  <section id="about" class="bio">
-    <h2>About</h2>
-    <p>Mohiddeen Thamsheer is a respected writer, translator, and Islamic scholar. His writings reflect a deep engagement with Islamic philosophy, contemporary society, and literary expression. He currently serves as a translator at <strong>Thijori Web Magazine</strong>.</p>
-    <p>His scholarly and literary works, ranging from Islamic studies to cultural history, have been widely appreciated for their clarity, depth, and spiritual insight.</p>
-  </section>
-
-  <section id="education" class="education">
-    <h2>Education</h2>
-    <p><strong>Secular Education:</strong> Completed graduation in <em>History, Economics, and Political Science</em> from <strong>Mangalore University</strong>.</p>
-    <p><strong>Islamic Studies:</strong> Completed Islamic graduation in <em>Theology and Jurisprudence</em> from <strong>KGN Islamic Science Dawa College, Mithur</strong>.</p>
-    <p><strong>Postgraduate:</strong> Currently pursuing Master's in <em>Islamic Science</em> at <strong>Madin Kulliya of Islamic Science College</strong>.</p>
-  </section>
-
-  <section id="works" class="works">
-    <h2>Selected Works</h2>
-    <ul class="works">
-      <li><a href="https://thijori.in/what-is-islamic-university-part-1/" target="_blank">What is Islamic University – Part 1</a></li>
-      <li><a href="https://thijori.in/turbon-a-religious-symbol/" target="_blank">Turban: A Religious Symbol</a></li>
-      <li><a href="https://thijori.in/lively-hisotry-ofkalpattanam/" target="_blank">Lively History of Kayalpattinam</a></li>
-      <li><em>...and many more articles on culture, religion, and history on Thijori.</em></li>
-    </ul>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Mohiddeen Thamsheer | Designed in Ainjmal Style</p>
-  </footer>
-
-  <script>
-    // Smooth fade-in animation
-    document.addEventListener("DOMContentLoaded", () => {
-      document.body.style.opacity = 0;
-      document.body.style.transition = "opacity 1.5s ease-in-out";
-      setTimeout(() => {
-        document.body.style.opacity = 1;
-      }, 100);
-    });
-  </script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mohiddeen Thamsheer | Personal Website</title>
-  <style>
-    :root {
-      --main-bg: #fdfaf6;
-      --accent: #4c4b63;
-      --highlight: #937b63;
-      --text-color: #1f1f1f;
-      --light-gray: #888;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: 'Georgia', serif;
-      background-color: var(--main-bg);
-      color: var(--text-color);
-      line-height: 1.8;
-      padding: 20px;
-    }
-
-    header {
-      text-align: center;
-      padding: 40px 20px;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      color: var(--accent);
-      font-family: 'Cambria', serif;
-      letter-spacing: 1px;
-    }
-
-    header p {
-      font-style: italic;
-      color: var(--highlight);
-      margin-top: 10px;
-    }
-
-    nav {
-      margin-top: 30px;
-      text-align: center;
-    }
-
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: var(--accent);
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: var(--highlight);
-    }
-
-    section {
-      max-width: 800px;
-      margin: 50px auto;
-      padding: 0 20px;
-    }
-
-    h2 {
-      color: var(--accent);
-      border-left: 5px solid var(--highlight);
-      padding-left: 10px;
-      margin-bottom: 20px;
-    }
-
-    .bio p, .education p {
-      margin-bottom: 15px;
-      font-size: 1.05rem;
-    }
-
-    ul.works {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    ul.works li {
-      margin-bottom: 10px;
-    }
-
-    ul.works a {
-      color: var(--highlight);
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    ul.works a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px 10px;
-      color: var(--light-gray);
-      font-size: 0.9rem;
-      border-top: 1px solid #ddd;
-    }
-
-    .arabic {
-      font-family: 'Scheherazade', serif;
-      font-size: 1.2rem;
-      color: var(--highlight);
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1>Mohiddeen Thamsheer</h1>
-    <p>Writer • Translator • Islamic Scholar</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#education">Education</a>
-      <a href="#works">Works</a>
-    </nav>
-  </header>
-
-  <section id="about" class="bio">
-    <h2>About</h2>
-    <p>Mohiddeen Thamsheer is a respected writer, translator, and Islamic scholar. His writings reflect a deep engagement with Islamic philosophy, contemporary society, and literary expression. He currently serves as a translator at <strong>Thijori Web Magazine</strong>.</p>
-    <p>His scholarly and literary works, ranging from Islamic studies to cultural history, have been widely appreciated for their clarity, depth, and spiritual insight.</p>
-  </section>
-
-  <section id="education" class="education">
-    <h2>Education</h2>
-    <p><strong>Secular Education:</strong> Completed graduation in <em>History, Economics, and Political Science</em> from <strong>Mangalore University</strong>.</p>
-    <p><strong>Islamic Studies:</strong> Completed Islamic graduation in <em>Theology and Jurisprudence</em> from <strong>KGN Islamic Science Dawa College, Mithur</strong>.</p>
-    <p><strong>Postgraduate:</strong> Currently pursuing Master's in <em>Islamic Science</em> at <strong>Madin Kulliya of Islamic Science College</strong>.</p>
-  </section>
-
-  <section id="works" class="works">
-    <h2>Selected Works</h2>
-    <ul class="works">
-      <li><a href="https://thijori.in/what-is-islamic-university-part-1/" target="_blank">What is Islamic University – Part 1</a></li>
-      <li><a href="https://thijori.in/turbon-a-religious-symbol/" target="_blank">Turban: A Religious Symbol</a></li>
-      <li><a href="https://thijori.in/lively-hisotry-ofkalpattanam/" target="_blank">Lively History of Kayalpattinam</a></li>
-      <li><em>...and many more articles on culture, religion, and history on Thijori.</em></li>
-    </ul>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Mohiddeen Thamsheer | Designed in Ainjmal Style</p>
-  </footer>
-
-  <script>
-    // Smooth fade-in animation
-    document.addEventListener("DOMContentLoaded", () => {
-      document.body.style.opacity = 0;
-      document.body.style.transition = "opacity 1.5s ease-in-out";
-      setTimeout(() => {
-        document.body.style.opacity = 1;
-      }, 100);
-    });
+    fadeIns.forEach(el => observer.observe(el));
   </script>
 </body>
 </html>
