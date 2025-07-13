@@ -15,53 +15,57 @@
 
     body {
       font-family: 'Crimson Pro', serif;
-      background-color: #f9f9f4;
+      background-color: #f1f1f1;
       color: #222;
-      line-height: 1.7;
       padding: 2rem;
     }
 
     header {
       text-align: center;
-      margin-bottom: 3rem;
+      margin-bottom: 2.5rem;
     }
 
     header h1 {
-      font-size: 2.8rem;
+      font-size: 2.6rem;
       font-weight: 700;
-      color: #2e2e2e;
+      color: #333;
     }
 
     header p {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       color: #666;
       margin-top: 0.5rem;
     }
 
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
     section {
-      max-width: 850px;
-      margin: 0 auto 3rem;
-      padding: 1.5rem;
       background-color: #fff;
-      border-radius: 1rem;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      padding: 1.8rem;
+      margin-bottom: 2rem;
+      border-left: 5px solid #666;
+      border-radius: 0.8rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
     }
 
     section h2 {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       margin-bottom: 1rem;
       color: #444;
-      border-bottom: 2px solid #eee;
+      border-bottom: 1px solid #ccc;
       padding-bottom: 0.4rem;
     }
 
     ul {
       list-style: square;
-      margin-left: 1.2rem;
+      margin-left: 1.4rem;
     }
 
     a {
-      color: #006766;
+      color: #005f73;
       text-decoration: none;
     }
 
@@ -73,23 +77,23 @@
       text-align: center;
       margin-top: 3rem;
       font-size: 0.9rem;
-      color: #aaa;
+      color: #888;
+    }
+
+    .fade {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease-out;
+    }
+
+    .fade.visible {
+      opacity: 1;
+      transform: translateY(0);
     }
 
     .highlight {
-      color: #005f5f;
+      color: #005f73;
       font-weight: 600;
-    }
-
-    .fadeIn {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: all 0.6s ease-in-out;
-    }
-
-    .fadeIn.visible {
-      opacity: 1;
-      transform: translateY(0);
     }
   </style>
 </head>
@@ -100,50 +104,54 @@
     <p>Writer · Translator · Islamic Scholar · Researcher</p>
   </header>
 
-  <section class="fadeIn">
-    <h2>About</h2>
-    <p>Mohiddeen Thamsheer is a passionate <span class="highlight">writer, translator</span>, and a dedicated <span class="highlight">Islamic scholar</span>. His works reflect a deep engagement with contemporary Islamic thought and cultural memory. He is currently pursuing his Master's in Islamic Sciences at <strong>Madin Kulliya of Islamic Science College</strong>.</p>
-  </section>
+  <div class="container">
+    <section class="fade">
+      <h2>About</h2>
+      <p><strong>Mohiddeen Thamsheer</strong> is a well-known <span class="highlight">writer</span>, <span class="highlight">translator</span>, and <span class="highlight">Islamic scholar</span> from India. His works engage with Islamic philosophy, tradition, and cultural heritage. Through academic depth and thoughtful writing, he contributes to both scholarship and public discourse.</p>
+    </section>
 
-  <section class="fadeIn">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>Graduation:</strong> History, Economics, Political Science – Mangalore University</li>
-      <li><strong>Islamic Graduation:</strong> Theology & Jurisprudence – KGN Islamic Science Dawa College, Mithur</li>
-      <li><strong>Postgraduate:</strong> Master's in Islamic Science – Madin Kulliya of Islamic Science College (Ongoing)</li>
-    </ul>
-  </section>
+    <section class="fade">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>Graduation:</strong> History, Economics, Political Science – Mangalore University</li>
+        <li><strong>Islamic Graduation:</strong> Theology & Jurisprudence – KGN Islamic Science Dawa College, Mithur</li>
+        <li><strong>Postgraduate:</strong> Master's in Islamic Science – Madin Kulliya of Islamic Science College (Ongoing)</li>
+      </ul>
+    </section>
 
-  <section class="fadeIn">
-    <h2>Selected Works</h2>
-    <ul>
-      <li><a href="https://thijori.in/what-is-islamic-university-part-1/" target="_blank">What is Islamic University (Part 1)</a></li>
-      <li><a href="https://thijori.in/turbon-a-religious-symbol/" target="_blank">Turban: A Religious Symbol</a></li>
-      <li><a href="https://thijori.in/lively-hisotry-ofkalpattanam/" target="_blank">Lively History of Kayalpattinam</a></li>
-      <li>... and several more contributions on <a href="https://thijori.in" target="_blank">Thijori Web Magazine</a></li>
-    </ul>
-  </section>
+    <section class="fade">
+      <h2>Selected Works</h2>
+      <ul>
+        <li><a href="https://thijori.in/what-is-islamic-university-part-1/" target="_blank">What is Islamic University – Part 1</a></li>
+        <li><a href="https://thijori.in/turbon-a-religious-symbol/" target="_blank">Turban: A Religious Symbol</a></li>
+        <li><a href="https://thijori.in/lively-hisotry-ofkalpattanam/" target="_blank">Lively History of Kayalpattinam</a></li>
+        <li>... and many more on <a href="https://thijori.in" target="_blank">Thijori Web Magazine</a></li>
+      </ul>
+    </section>
 
-  <section class="fadeIn">
-    <h2>Research & Interests</h2>
-    <p>Thamsheer’s research explores intersections of Islamic tradition with modern knowledge, education reform, spiritual practices, and Sufi heritage in South India. He seeks to build bridges between academic scholarship and community awareness through thoughtful writing and translation.</p>
-  </section>
+    <section class="fade">
+      <h2>Research Interests</h2>
+      <p>Thamsheer's academic interests include Islamic jurisprudence, theology, traditional epistemology, Sufi thought, and cultural reform. He is committed to bridging the gap between traditional Islamic scholarship and contemporary intellectual challenges.</p>
+    </section>
+  </div>
 
   <footer>
-    &copy; 2025 Mohiddeen Thamsheer · Crafted in Ainjmal Style
+    &copy; 2025 Mohiddeen Thamsheer · Ainjmal Academic Style
   </footer>
 
   <script>
-    const fadeIns = document.querySelectorAll('.fadeIn');
-    const observer = new IntersectionObserver(entries => {
+    // Fade-in animation on scroll
+    const fadeEls = document.querySelectorAll('.fade');
+
+    const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
         }
       });
-    }, { threshold: 0.2 });
+    }, { threshold: 0.15 });
 
-    fadeIns.forEach(el => observer.observe(el));
+    fadeEls.forEach(el => observer.observe(el));
   </script>
 </body>
 </html>
